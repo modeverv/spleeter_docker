@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  spleeter:
+    build: .
+    container_name: spleeter_container
+    volumes:
+      - ./mount:/mount
+    stdin_open: true
+    tty: true
+    mem_limit: 8g
